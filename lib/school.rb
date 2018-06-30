@@ -7,7 +7,7 @@ class School
     end
 
     def add_student(student_name, grade)
-      if @school_name.keys.any?{|x| x == grade.to_i} == true
+      if @school_name.keys.any?{|x| x == grade.to_i}
         @school_name[grade.to_i] << student_name
       else
         @school_name[grade.to_i] = []
